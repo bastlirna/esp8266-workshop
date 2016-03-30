@@ -1,4 +1,4 @@
-# Postup instalace nezbytného SW
+# Postup instalace SW
 
 ## 1. Arduino IDE
 
@@ -30,11 +30,11 @@ Následně pokračujte do *Manažér desek*
 
 ![Menu](.images/arduino-ide-3.jpg)
 
-Nyní by mělo jít rovnou najít *ESP8266* v dostupných deskách. Vybrat poslední verzi (aktuálně 2.1.0) a klikněte na **Instalovat**.
+Nyní by mělo jít rovnou najít *ESP8266* v dostupných deskách. Vybrat poslední verzi (aktuálně 2.1.0) a klikněte na **Instalace**.
 
 ![Menu](.images/arduino-ide-4.jpg)
 
-> :memo: Instalace je poměrně časově náročný postup, **zabere 10 - 30 minut**.
+> :information_source: Instalace je poměrně časově náročný proces, **zabere 10 - 30 minut**.
 
 Pokud se vše povedlo, máte nyní v Arduino IDE v nabídce desky postavené nad ESP8266.
 
@@ -46,7 +46,7 @@ Odkazy:
 - [https://github.com/esp8266/Arduino](https://github.com/esp8266/Arduino)
 
 
-## Co dál se může hodit
+## Co se může hodit
 
 Pár nástrojů, které nejsou nezbytné. Pro instalační postup navštivte stránky autorů.
 
