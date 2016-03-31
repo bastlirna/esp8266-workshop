@@ -10,7 +10,7 @@ Materiály a návody pro ESP8266 workshop, který čas od času pořádá [@bast
 
 Workshop je rozdělen do několika částí, které jsou na sobě více méně nezávislé.
 
-1. Základní vlastnosti a použití ESP
+1. Základní vlastnosti a použití ESP (flashování, AT příkazy, Lua)
 2. **[Programování pomocí Arduino IDE](https://github.com/bastlirna/esp8266-workshop/tree/master/02-Arduino)**
 3. Programování pomocí SDK (neboli čisté C/C++)
 
