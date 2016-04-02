@@ -25,4 +25,5 @@ Odkazy:
 - [Základní přehled](https://github.com/bastlirna/esp8266-workshop/blob/master/01-Intro/demoboard.md)
 - `demo-board.h` (TBD)
 - [Schéma a rozložení DPS](https://github.com/bastlirna/esp8266-board/raw/master/pcb/ESP8266-demoKit-v4_full.PDF) [PDF] 
-
+- [Arduino ESP8266](https://github.com/esp8266/Arduino)
+- [Arduino ESP8266 - dokumentace](https://github.com/esp8266/Arduino/blob/master/doc/reference.md)
