@@ -12,7 +12,7 @@ Workshop je rozdělen do několika částí, které jsou na sobě více méně n
 
 1. Základní vlastnosti a použití ESP (flashování, AT příkazy, Lua)
 2. **[Programování pomocí Arduino IDE](https://github.com/bastlirna/esp8266-workshop/tree/master/02-Arduino)**
-3. Programování pomocí SDK (neboli čisté C/C++)
+3. **[Programování pomocí Platform IO](https://github.com/bastlirna/esp8266-workshop/tree/master/03-PlatformIO)** (workshop **Drátujeme IoT**)
 
 ## Odkazy jinam
 
