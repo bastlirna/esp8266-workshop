@@ -30,7 +30,7 @@ Po dokončení instalace se vás aplikace zeptá jestli se má *načíst znovu*,
 Na záložce *Home* v Atomu klepněte na **New Project**.
 Objeví se okno s inicializací projektu.
 
-Je potřeba aby jste vybrali v **Select boar*d* položku **Espressif ESP8266 ESP-12E**
+Je potřeba aby jste vybrali v **Select board** položku **Espressif ESP8266 ESP-12E**
 
 ![PlatformIO new project](img/screen2.png "Výběr platformy")
 
@@ -42,7 +42,7 @@ A poté stiskněte tlačítko **Process**. Nyní automaticky proběhne instalace
 
 ## Zkouška instalace
 
-V adresáři *src* vytvořte nový soubor se jménem **main.cpp** (klepněte pravým tlačítkem na slořku *src* a tam dejte **New File**).
+V adresáři *src* vytvořte nový soubor se jménem **main.cpp** (klepněte pravým tlačítkem na složku *src* a tam dejte **New File**).
 
 ![PlatformIO new project](img/screen4.png "Vytvoření nového souboru")
 
