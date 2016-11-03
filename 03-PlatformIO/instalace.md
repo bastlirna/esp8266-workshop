@@ -8,9 +8,18 @@ Druhou (volitelnou) částí, je IDE postavené na editoru [Atom](https://atom.i
 
 **Pro účely workshopu budeme používat výchozí balíku s editorem Atom.**
 
+## Postup
+
 Zde následuje *výcuc* nejdůležitějších kroků instalace na **Windows** nebo **Linux** doplněný o **první kompilaci**, abyste si ověřili, že vše funguje.
 
 Kompletní postup instalace najdete na [http://docs.platformio.org/en/stable/ide/atom.html#installation](http://docs.platformio.org/en/stable/ide/atom.html#installation)
+
+**Obsah**
+
+- [Instalace na Windows](#instalace-na-windows)
+- [Instalace na Linux](#instalace-na-ubuntu-1604)
+- [Společná část](#společná-část)
+- [Kam dál](#kam-dál)
 
 ## Instalace na Windows
 
@@ -46,7 +55,7 @@ Chvíli to trvá, buďte trpěliví *;)*. Po dokončení instalace se vás aplik
 
 ![PlatformIO Home](img/screen-win2.png "Nainstalovaný Atom s PlatformIO")
 
-*Pokračujte na společnou část níže.* 
+Pokračujte na [společná část](#společná-část) instalace. 
 
 ## Instalace na Ubuntu 16.04
 
