@@ -118,7 +118,7 @@ Pokud vše proběhlo správně, tak byste vpravo dole měli vidět hlášku **SU
 
 ## Kam dál
 
-Tím máte vše připravené na **workshop**. Těšíme se na viděnou.
+Tím máte vše připravené na **[workshop](readme.md)**. Těšíme se na viděnou.
 
 *Pár tipů na závěr*
 
