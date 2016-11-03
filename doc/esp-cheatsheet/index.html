@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>ESP8266 cheatsheet</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cheatsheet.css" />
+    <link rel="stylesheet" href="css/cheatsheet-print.css" media="print"/>
+  </head>
+  <body>
+    <div class="mwrapper">
+    <h1>ESP8266 cheatsheet</h1>
+    <div class="cont c1">
+
+      <!-- =========================  Serial  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-transfer"></span>Serial</h2>
+        <pre><code class="esp-arduino">void Serial.begin(unsigned long baud);
+size_t Serial.println(...);
+size_t Serial.print(...);
+String readString();
+String readStringUntil(char terminator);
+</code></pre>
+      </div>
+
+      <!-- =========================  Utils  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-cog"></span>Utils</h2>
+        <pre><code class="esp-arduino">unsigned long millis();
+unsigned long micros();
+void delay(unsigned long time);
+void ESP.reset();</code></pre>
+      </div>
+
+    </div>
+    <div class="cont c2">
+
+      <!-- =========================  I/O  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-off"></span>I/O</h2>
+        <pre><code class="esp-arduino">void pinMode(uint8_t pin, uint8_t mode); // mode = INPUT,OUTPUT,INPUT_PULLUP
+void digitalWrite(uint8_t pin, uint8_t value); // value = HIGH, LOW
+int digitalRead(uint8_t pin);
+int analogRead(uint8_t pin); // only on A0
+void analogWrite(uint8_t pin, int value); // value = &lt;0,1023&gt;</code></pre>
+      </div>
+
+      <!-- =========================  WiFi  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-link"></span>WiFi</h2>
+        <pre><code class="esp-arduino">WiFi.begin(char* ssid, char *passphrase);
+WiFi.begin(char* ssid);
+bool WiFi.disconnect();
+bool WiFi.isConnected();
+bool WiFi.config(IPAddress local_ip, IPAddress gateway, IPAddress subnet);
+IPAddress addr = IPAddress(192, 168, 0, 33);</code></pre>
+      </div>
+
+    </div>
+    <div class="cont c3">
+      <!-- =========================  Basic structure  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-home"></span>Basic structure</h2>
+        <pre><code class="esp-arduino">#include &lt;Arduino.h&gt;
+void setup()
+{
+}
+void loop()
+{
+}</code></pre>
+      </div>
+
+      <!-- =========================  Types  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-pencil"></span>Types</h2>
+        <pre><code class="esp-arduino">// unsigned integers
+uint8_t, uint16_t,
+uint32_t, uint64_t
+// signed integers
+int8_t, int16_t,
+int32_t, int64_t
+// floating point numbers
+double, float
+// others
+boolean, String
+</code></pre>
+      </div>
+
+    </div>
+
+
+
+    <div class="author">
+      https://twitter.com/bastlirna<br/>
+      https://twitter.com/VojtechSuk
+    </div>
+    <div class="logo">
+      <img src="img/logo_full.png" width="80" height="25"/>
+      <img src="img/SH-logo-col.png" width="90" height="25"/>
+    </div>
+    </div>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+
+      var CPP = hljs.getLanguage('cpp').exports;
+      var ARDUINO = hljs.getLanguage('arduino');
+
+      var espArduino = {
+
+        keywords: {
+            keyword: 'size_t uint8_t uint16_t uint32_t uint64_t int8_t int16_t int32_t int64_t ' + ARDUINO.keywords.keyword,
+            built_in: 'ESP isConnected reset ' + ARDUINO.keywords.built_in,
+            literal: '' + ARDUINO.keywords.literal
+        },
+
+        contains: [
+          CPP.preprocessor,
+          hljs.C_LINE_COMMENT_MODE,
+          hljs.C_BLOCK_COMMENT_MODE,
+          hljs.APOS_STRING_MODE,
+          hljs.QUOTE_STRING_MODE,
+          hljs.C_NUMBER_MODE
+        ]
+      };
+
+      console.log(espArduino);
+
+      hljs.registerLanguage('esp-arduino', (hljs) => (espArduino));
+      hljs.initHighlighting();
+
+    </script>
+  </body>
+</html>
