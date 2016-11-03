@@ -1,5 +1,7 @@
 # ESP8266 a Platform IO
 
+<img src="https://raw.githubusercontent.com/bastlirna/esp8266-workshop/master/03-PlatformIO/img/platformio-logo.png" alt="Platform IO" align="right">
+
 Během tohoto workshopu se naučíte programovat ESP8266 pomocí [Platform IO](http://platformio.org), důraz bude kladen hlavně na příklady z IoT oblasti (mimo jiné např. měření teploty, cvakání relé, konfigurace a připojení na WiFi a hlavně MQTT komunikaci).
 
 ## Pro koho je určen

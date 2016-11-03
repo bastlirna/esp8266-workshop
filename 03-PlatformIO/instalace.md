@@ -1,7 +1,5 @@
 # Postup instalace Platform IO
 
-![PlatformIO logo](img/platformio-logo.png "PlatformIO logo")
-
 ## Úvod
 
 Základem PlatformIO je sada konzolových nástrojů které umožňují vývoj jednoho kódu pro různé platformy. V současné chvíli podporuje mnoho velkých výrobců HW jako jsou například Atmel, ST Micro, Microchcip, Nordic, NXP, Texas Instruments,...
