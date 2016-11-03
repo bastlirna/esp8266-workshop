@@ -10,7 +10,7 @@ Během tohoto workshopu se naučíte jak programovat ESP8266 pomocí Arduino IDE
 
 Během workshopu od nás dostanete zapůjčený [demo board](https://github.com/bastlirna/esp8266-board). Budete ale potřebovat vlastní notebook s nainstalovaným **Arduino IDE včetně podpory pro ESP8266**.
 
-> :bangbang: Instalace trvá řádově desítky minut a vyžaduje stažení nekolika set MB z internetu. **Je nezbytné připravit si prostředí doma před začátkem workshopu.**
+> :bangbang: Instalace trvá řádově desítky minut a vyžaduje stažení několika set MB z internetu. **Je nezbytné připravit si prostředí doma před začátkem workshopu.**
 
 Pokračujte na **[Postup instalace](instalace.md)**
 

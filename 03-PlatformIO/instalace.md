@@ -1,4 +1,4 @@
-# PlatformIO workshop
+# Postup instalace Platform IO
 
 ![PlatformIO logo](img/platformio-logo.png "PlatformIO logo")
 
@@ -6,7 +6,7 @@
 
 Základem PlatformIO je sada konzolových nástrojů které umožňují vývoj jednoho kódu pro různé platformy. V současné chvíli podporuje mnoho velkých výrobců HW jako jsou například Atmel, ST Micro, Microchcip, Nordic, NXP, Texas Instruments,...
 
-Druhou (volitelnou) částí, je IDE postavené na editoru [Atom](https://atom.io/). Nicméně PlatformIO jde doinstalovat i do [jinných oblíbených editorů](http://docs.platformio.org/en/stable/ide.html) a nebo ho používat jen z [konzole](http://docs.platformio.org/en/stable/userguide/index.html).
+Druhou (volitelnou) částí, je IDE postavené na editoru [Atom](https://atom.io/). Nicméně PlatformIO jde doinstalovat i do [jiných oblíbených editorů](http://docs.platformio.org/en/stable/ide.html) a nebo ho používat jen z [konzole](http://docs.platformio.org/en/stable/userguide/index.html).
 
 **Pro účely workshopu budeme používat výchozí balíku s editorem Atom.**
 
@@ -16,11 +16,11 @@ Kompletní postup instalace najdete na [http://docs.platformio.org/en/stable/ide
 
 ## Instalace na Windows
 
-### Sytémové požadavky
+### Systémové požadavky
 
 #### Python 2.7
 
-Platform IO vyžaduje **Python 2.7**. Pokud Python nemáte nainstalovaný, jděte na  [https://www.python.org/downloads/](https://www.python.org/downloads/), stáhněte si instlátor pro Python verze **2.7**! a nainstalujte jej.
+Platform IO vyžaduje **Python 2.7**. Pokud Python nemáte nainstalovaný, jděte na  [https://www.python.org/downloads/](https://www.python.org/downloads/), stáhněte si instalátor pro Python verze **2.7**! a spusťte jej.
 
 Během instalace se ujistěte, že zaškrtnete možnost "*Add python.exe to Path*"
 
@@ -28,39 +28,41 @@ Během instalace se ujistěte, že zaškrtnete možnost "*Add python.exe to Path
 
 #### Clang
 
-Pokud chcete, aby vým fungovala statická analýza kódu (aby vám editor napovídal), musíte nainstalovat [CLang](http://clang.llvm.org/).
+Pokud chcete, aby fungovala statická analýza kódu (aby vám editor napovídal), musíte nainstalovat [CLang](http://clang.llvm.org/).
 
-Jděte na [http://llvm.org/releases/download.html](http://llvm.org/releases/download.html), sthněte instalátor pro Windows a nainstalujte.
+Jděte na [http://llvm.org/releases/download.html](http://llvm.org/releases/download.html), stáhněte instalátor pro Windows a spusťte jej.
 
-Během instalace se ujistětet, že zaškrtnete možnost "*Add LLVM to the system PATH*"
+Během instalace se ujistěte, že zaškrtnete možnost "*Add LLVM to the system PATH*"
 
 > Pokud během instalace uvidíte chybu `Failed to find MSBuild toolsets directory`, můžete jí ignorovat, ne výslednou funkci nemá vliv. 
 
-### Instalace
+### Instalace Platform IO
 
-Stáhněte si instalční soubor z adresy [http://platformio.org/platformio-ide](http://platformio.org/platformio-ide) a nainstalujte.
+Stáhněte si instalační soubor z adresy [http://platformio.org/platformio-ide](http://platformio.org/platformio-ide) a nainstalujte.
 
-Nejprve se nainstaluje samotný editor Atom. Při prvním spuštění proběhne instalace PlatformIO do Atomu. 
+Nejprve se nainstaluje samotný editor Atom. Při prvním spuštění pak proběhne instalace PlatformIO do Atomu. 
 
-![První spuštění](img\screen-win1.png)
+![První spuštění](img/screen-win1.png)
 
-Chvíli to trvá, buťe trpěliví *;)*. Po dokončení instalace se vás aplikace zeptá jestli se má načíst znovu, potvrďte že ano a tím je instalace dokončená.
+Chvíli to trvá, buďte trpěliví *;)*. Po dokončení instalace se vás aplikace zeptá, jestli se má načíst znovu, potvrďte že ano a tím je instalace dokončená.
 
-![Nainstalováno](img\screen-win2.png)
+![PlatformIO Home](img/screen-win2.png "Nainstalovaný Atom s PlatformIO")
 
 *Pokračujte na společnou část níže.* 
 
 ## Instalace na Ubuntu 16.04
 
-Pro instalaci stačí stahnout balíček ze stránek [http://platformio.org/get-started](http://platformio.org/get-started), nainstalovat jej a spustit.
+Pro instalaci stačí stáhnout balíček ze stránek [http://platformio.org/get-started](http://platformio.org/get-started), nainstalovat jej a spustit.
 
-    wget https://dl.bintray.com/platformio/ide-bundles/platformio-atom-linux-x86_64.deb
-    sudo apt-get install git clang
-    sudo dpkg -i platformio-atom-linux-x86_64.deb
-    atom
+```bash
+wget https://dl.bintray.com/platformio/ide-bundles/platformio-atom-linux-x86_64.deb
+sudo apt-get install git clang
+sudo dpkg -i platformio-atom-linux-x86_64.deb
+atom
+```
 
 Při prvním spuštění proběhne instalace PlatformIO do Atomu.
-Po dokončení instalace se vás aplikace zeptá jestli se má *načíst znovu*, potvrďte že ano a tím je instalace dokončená.
+Po dokončení instalace se vás aplikace zeptá, jestli se má *načíst znovu*, potvrďte že ano a tím je instalace dokončená.
 
 ![PlatformIO Home](img/screen1.png "Nainstalovaný Atom s PlatformIO")
 
@@ -71,7 +73,7 @@ Po dokončení instalace se vás aplikace zeptá jestli se má *načíst znovu*,
 Na záložce *Home* v Atomu klepněte na **New Project**.
 Objeví se okno s inicializací projektu.
 
-Je potřeba aby jste vybrali v **Select board** položku **Espressif ESP8266 ESP-12E**
+Je potřeba abyste vybrali v **Select board** položku **Espressif ESP8266 ESP-12E**
 
 ![PlatformIO new project](img/screen2.png "Výběr platformy")
 
@@ -105,7 +107,7 @@ A klepněte na *build* (ikona *fajfky* nalevo nahoře)
 
 ![PlatformIO build project](img/screen5.png "Zkopilování projektu")
 
-Pokud vše proběhlo správně, tak by jste pravo dole měli vidět hlášku **SUCCESS**.
+Pokud vše proběhlo správně, tak byste vpravo dole měli vidět hlášku **SUCCESS**.
 
 ## Kam dál
 
