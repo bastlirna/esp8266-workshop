@@ -18,6 +18,7 @@
         <pre><code class="esp-arduino">void Serial.begin(unsigned long baud);
 size_t Serial.println(...);
 size_t Serial.print(...);
+size_t Serial.printf(...);
 String readString();
 String readStringUntil(char terminator);
 </code></pre>
@@ -29,7 +30,10 @@ String readStringUntil(char terminator);
         <pre><code class="esp-arduino">unsigned long millis();
 unsigned long micros();
 void delay(unsigned long time);
-void ESP.reset();</code></pre>
+void yield();
+void ESP.reset();
+uint32_t ESP.getFreeHeap();
+uint32_t ESP.getChipId();</code></pre>
       </div>
 
     </div>
@@ -109,7 +113,7 @@ boolean, String
 
         keywords: {
             keyword: 'size_t uint8_t uint16_t uint32_t uint64_t int8_t int16_t int32_t int64_t ' + ARDUINO.keywords.keyword,
-            built_in: 'ESP isConnected reset ' + ARDUINO.keywords.built_in,
+            built_in: 'ESP isConnected reset printf ' + ARDUINO.keywords.built_in,
             literal: '' + ARDUINO.keywords.literal
         },
 
