@@ -61,10 +61,16 @@ pre{
 .c2{
   width:540px;
 }
-.c3{
+.c3, .c5{
   width:270px;
   float:right;
   margin:0 0 0 0;
+}
+.c4{
+  width:814px;
+}
+.c5 .small, .c5 .small .hljs-comment{
+  font-size: 10px !important;
 }
 .hljs-comment{
   font-size:8pt;
@@ -83,5 +89,10 @@ pre{
   font-size:10px;
   position:absolute;
   top:0px;
+  right:0px;
+}
+.licence {
+  position:absolute;
+  bottom:10px;
   right:0px;
 }
