@@ -8,6 +8,8 @@ Druhou (volitelnou) částí, je IDE postavené na editoru [Atom](https://atom.i
 
 **Pro účely workshopu budeme používat výchozí balíku s editorem Atom.**
 
+> :bangbang: Instalace trvá řádově desítky minut a vyžaduje stažení několika set MB z internetu. **Je nezbytné připravit si prostředí doma před začátkem workshopu.**
+
 ## Postup
 
 Zde následuje *výcuc* nejdůležitějších kroků instalace na **Windows** nebo **Linux** doplněný o **první kompilaci**, abyste si ověřili, že vše funguje.
