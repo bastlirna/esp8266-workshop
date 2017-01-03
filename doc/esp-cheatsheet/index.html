@@ -15,12 +15,10 @@
       <!-- =========================  Serial  ========================= -->
       <div class="block">
         <h2><span class="glyphicon glyphicon-transfer"></span>Serial</h2>
-        <pre><code class="esp-arduino">void Serial.begin(unsigned long baud);
+        <pre><code class="esp-arduino">void Serial.begin(uint32_t baud);
 size_t Serial.println(...);
 size_t Serial.print(...);
 size_t Serial.printf(...);
-String readString();
-String readStringUntil(char terminator);
 </code></pre>
       </div>
 
@@ -92,6 +90,40 @@ boolean, String
 
     </div>
 
+    <div class="cont c4">
+
+      <!-- =========================  MQTT  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-comment"></span>MQTT</h2>
+        <pre><code class="esp-arduino">#include &lt;ESP8266WiFi.h&gt;
+#include &lt;PubSubClient.h&gt;
+WiFiClient espClient;
+PubSubClient client(espClient);
+static void callback(char* topic, byte* payload, unsigned int length) { }
+PubSubClient&amp; client.setServer(char* domain, uint16_t port);
+PubSubClient&amp; client.setCallback(callback); // sets subscribe callback
+boolean client.connected();
+boolean client.connect(char* id); // id = unique ident
+boolean client.publish(char* topic, char* payload); // publish message
+boolean client.subscribe(char* topic);
+boolean loop(); // in loop </code></pre>
+      </div>
+    </div>
+
+    <div class="cont c5">
+
+      <!-- =========================  Doc  ========================= -->
+      <div class="block">
+        <h2><span class="glyphicon glyphicon-comment"></span>Documentation</h2>
+        <pre><code class="esp-arduino"><span class="small">https://www.arduino.cc/</span>en/Reference/HomePage
+<span class="small">https://github.com/</span>esp8266/Arduino
+<span class="small">https://github.com/</span>bastlirna/esp8266-workshop
+<span class="small">https://github.com/</span>bastlirna//esp8266-board</code></pre>
+      </div>
+    </div>
+    <div style="clear:both; width:100%;"></div>
+
+      <img src="img/CC-BY-SA.png" width="85" height="30" class="licence"/>
 
 
     <div class="author">
@@ -113,7 +145,7 @@ boolean, String
 
         keywords: {
             keyword: 'size_t uint8_t uint16_t uint32_t uint64_t int8_t int16_t int32_t int64_t ' + ARDUINO.keywords.keyword,
-            built_in: 'ESP isConnected reset printf ' + ARDUINO.keywords.built_in,
+            built_in: 'ESP isConnected reset PubSubClient publish subscribe setServer setCallback printf ' + ARDUINO.keywords.built_in,
             literal: '' + ARDUINO.keywords.literal
         },
 

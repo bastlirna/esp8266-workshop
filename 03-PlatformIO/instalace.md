@@ -43,13 +43,13 @@ Jděte na [http://llvm.org/releases/download.html](http://llvm.org/releases/down
 
 Během instalace se ujistěte, že zaškrtnete možnost "*Add LLVM to the system PATH*"
 
-> Pokud během instalace uvidíte chybu `Failed to find MSBuild toolsets directory`, můžete jí ignorovat, ne výslednou funkci nemá vliv. 
+> Pokud během instalace uvidíte chybu `Failed to find MSBuild toolsets directory`, můžete jí ignorovat, ne výslednou funkci nemá vliv.
 
 ### Instalace Platform IO
 
 Stáhněte si instalační soubor z adresy [http://platformio.org/platformio-ide](http://platformio.org/platformio-ide) a nainstalujte.
 
-Nejprve se nainstaluje samotný editor Atom. Při prvním spuštění pak proběhne instalace PlatformIO do Atomu. 
+Nejprve se nainstaluje samotný editor Atom. Při prvním spuštění pak proběhne instalace PlatformIO do Atomu.
 
 ![První spuštění](img/screen-win1.png)
 
@@ -57,16 +57,20 @@ Chvíli to trvá, buďte trpěliví *;)*. Po dokončení instalace se vás aplik
 
 ![PlatformIO Home](img/screen-win2.png "Nainstalovaný Atom s PlatformIO")
 
-Pokračujte na [společná část](#společná-část) instalace. 
+Pokračujte na [společná část](#společná-část) instalace.
 
 ## Instalace na Ubuntu 16.04
 
 Pro instalaci stačí stáhnout balíček ze stránek [http://platformio.org/get-started](http://platformio.org/get-started), nainstalovat jej a spustit.
 
+Abyste mohli nahrávat program do demoboardu pod běžným uživatelem (ne *root*), tak je potřeba přidat oprávnění k portu.
+To má za úkol předposlední příkaz který přidá vašeho uživatele do skupiny *dialout*.
+
 ```bash
 wget https://dl.bintray.com/platformio/ide-bundles/platformio-atom-linux-x86_64.deb
 sudo apt-get install git clang
 sudo dpkg -i platformio-atom-linux-x86_64.deb
+sudo adduser `whoami` dialout
 atom
 ```
 
@@ -75,7 +79,7 @@ Po dokončení instalace se vás aplikace zeptá, jestli se má *načíst znovu*
 
 ![PlatformIO Home](img/screen1.png "Nainstalovaný Atom s PlatformIO")
 
-## Společná část 
+## Společná část
 
 ### Podpora pro ESP8266
 
