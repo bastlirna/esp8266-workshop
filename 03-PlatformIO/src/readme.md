@@ -14,13 +14,13 @@ Target platform při vytvráření projektu je **Espressif ESP8266 ESP-12E**. Ne
 ## Demo 2
 Ukázka připojení k MQTT serveru. [demo 2] (demo2.zip)
 
-* Přepište kód tak, aby jste zápisem do kanálu **/workshop/*<serialNO>*/command** mohli rozsvítit ledku.
-* Přepište kód tak, aby při stisku tlačítka odeslal zprávu do topicu **/workshop/*<serialNO>*/button**
+* Přepište kód tak, aby jste zápisem do kanálu **`/workshop/<serialNO>/command`** mohli rozsvítit ledku.
+* Přepište kód tak, aby při stisku tlačítka odeslal zprávu do topicu **`/workshop/<serialNO>/button`**
 
 ## Demo 3
 Ukázka čtení teploty a vlhkosti z DHT11. [demo 3] (demo3.zip)
 
-* Zkombinujte demo3 s demo2, aby jste odesílali hodnoty z čidla na MQTT kanál **/workshop/*<serialNO>*/temperature**
+* Zkombinujte demo3 s demo2, aby jste odesílali hodnoty z čidla na MQTT kanál **`/workshop/<serialNO>/temperature`**
 
 
 ## Doporučení
