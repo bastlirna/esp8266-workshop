@@ -24,7 +24,9 @@ void loop() {
     return;
   }
 
-	Serial.print(t);
-	Serial.print(",");
-	Serial.println(h);
+  Serial.print("Teplota je:");
+  Serial.println(t);
+  Serial.println();
+  Serial.println("Vlhkost je: ");
+  Serial.println(h);
 }
