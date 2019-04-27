@@ -24,7 +24,9 @@ void loop() {
     return;
   }
 
-	Serial.print("Teplota je:" + t + " stupňů Celsia");
-	Serial.print(",");
-	Serial.println("Vlhkost je" + h + " %");
+  Serial.print("Teplota je:");
+  Serial.println(t);
+  Serial.println();
+  Serial.println("Vlhkost je: ");
+  Serial.println(h);
 }
